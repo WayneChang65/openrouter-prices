@@ -1,0 +1,31 @@
+{
+  "name": "openrouter-prices",
+  "version": "1.0.0",
+  "author": "WayneChang65",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/WayneChang65/openrouter-prices/issues"
+  },
+  "homepage": "https://github.com/WayneChang65/openrouter-prices#readme",
+  "description": "A CLI tool to fetch and display the latest model prices from the OpenRouter API.",
+  "keywords": [
+    "openrouter",
+    "ai",
+    "models",
+    "prices",
+    "cli",
+    "typescript"
+  ],
+  "scripts": {
+    "lint": "eslint . --ext .ts",
+    "start": "tsx src/openrouter-prices.ts"
+  },
+  "devDependencies": {
+    "@types/node": "^24.1.0",
+    "tsx": "^4.20.3",
+    "typescript": "^5.8.3"
+  },
+  "dependencies": {
+    "got": "^14.4.7"
+  }
+}
