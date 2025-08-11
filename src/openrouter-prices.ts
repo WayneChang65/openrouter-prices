@@ -1,10 +1,16 @@
 import got from "got";
 import fs from "fs";
 import path from "path";
+import { fileURLToPath } from "url";
 import inquirer from "inquirer";
 
 const API_KEY = process.env.OPENROUTER_API_KEY;
 const API_URL = "https://openrouter.ai/api/v1/models";
+
+// ES Module equivalent for __dirname
+const __filename = fileURLToPath(import.meta.url);
+const __dirname = path.dirname(__filename);
+
 const PRICES_FILE_PATH = path.join(__dirname, "openrouter-prices.json");
 
 interface ModelData {
@@ -167,7 +173,4 @@ async function main() {
   }
 }
 
-// Execute the main function if the script is run directly
-if (require.main === module) {
-  main();
-}
+main();
