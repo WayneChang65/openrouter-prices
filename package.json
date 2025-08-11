@@ -1,31 +1,44 @@
 {
   "name": "openrouter-prices",
   "version": "1.0.0",
+  "type": "module",
   "author": "WayneChang65",
   "license": "MIT",
-  "bugs": {
-    "url": "https://github.com/WayneChang65/openrouter-prices/issues"
-  },
-  "homepage": "https://github.com/WayneChang65/openrouter-prices#readme",
-  "description": "A CLI tool to fetch and display the latest model prices from the OpenRouter API.",
+  "description": "A CLI tool to fetch, cache, and compare prices and parameters for OpenRouter models.",
   "keywords": [
     "openrouter",
     "ai",
     "models",
     "prices",
+    "compare",
+    "comparison",
     "cli",
-    "typescript"
+    "typescript",
+    "node"
   ],
   "scripts": {
-    "lint": "eslint . --ext .ts",
+    "lint": "eslint .",
     "start": "tsx src/openrouter-prices.ts"
   },
+  "engines": {
+    "node": ">=18.0.0"
+  },
+  "bugs": {
+    "url": "https://github.com/WayneChang65/openrouter-prices/issues"
+  },
+  "homepage": "https://github.com/WayneChang65/openrouter-prices#readme",
   "devDependencies": {
-    "@types/node": "^24.1.0",
-    "tsx": "^4.20.3",
-    "typescript": "^5.8.3"
+    "@types/inquirer": "^9.0.7",
+    "@types/node": "^20.14.2",
+    "@typescript-eslint/eslint-plugin": "^7.13.0",
+    "@typescript-eslint/parser": "^7.13.0",
+    "eslint": "^8.57.0",
+    "tsx": "^4.15.5",
+    "typescript": "^5.4.5",
+    "typescript-eslint": "^8.39.0"
   },
   "dependencies": {
-    "got": "^14.4.7"
+    "got": "^14.4.2",
+    "inquirer": "^9.2.23"
   }
 }
