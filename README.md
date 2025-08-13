@@ -109,5 +109,5 @@ Finally, the script displays the comparison table based on the `modelsToCompareB
 
 ## 授權條款 (License)  
 
-本專案採用 MIT 授權。
+本專案採用 MIT 授權。  
 This project is licensed under the MIT License.
